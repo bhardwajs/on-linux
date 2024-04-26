@@ -24,7 +24,6 @@ reader tries to open an existing shared memory object map it to its own memory a
 > in theory we don't need the lock since it is an x64 and we are well under the boundaries of torn read/write. *but* it is always a good idea to have a lock around shared objects.
 
 
-
 ## demo - 32 - shared memory as storage
 
 1. stop both reader and writer.
@@ -34,4 +33,3 @@ reader tries to open an existing shared memory object map it to its own memory a
 5. run it again
 
 shared memory objects life cycle is detached from the process that created it. This include the data that sets in this memory.
-

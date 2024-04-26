@@ -6,15 +6,15 @@
 
 int main( void )
 {
-	uid_t ruid, euid, suid;
+    uid_t ruid, euid, suid;
 
-	printf( "my userid is %d\n", getuid() );
+    printf( "my userid is %d\n", getuid() );
 
-	if (getresuid(&ruid, &euid, &suid) < 0)
-		perror("failed to get real user id");
+    if (getresuid(&ruid, &euid, &suid) < 0)
+        perror("failed to get real user id");
 
 
-	printf( "my effective userid is %d\n", euid );
+    printf( "my effective userid is %d\n", euid );
 
-	return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }

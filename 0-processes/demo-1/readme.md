@@ -4,7 +4,7 @@ explore the ultra basic hello-world
 
 ```
 cd ./0-processes/demo-1/hello-world
-cat ./hello-world.c
+cat ./program.c
 ```
 
 how many syscall do you think this program will do?
